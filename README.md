@@ -12,7 +12,7 @@ A customizable `dataviewjs` script for Obsidian that provides an interactive tab
 - **Live Note Count**: Always know how many notes match your current filter.
 - **Customizable UI**: Change the new note button's label and color.
 
-## Rendered vuew which this dataviewjs script produces
+#### Rendered view which this dataviewjs script produces
 
 <img width="751" height="192" alt="image" src="https://github.com/user-attachments/assets/1c97935b-5091-4627-9763-e34c515a4150" />
 
