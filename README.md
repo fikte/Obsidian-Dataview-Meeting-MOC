@@ -1,7 +1,5 @@
 # Obsidian Dataview Meeting-MOC
 
-# Dataview Meeting Notes Manager
-
 A customizable `dataviewjs` script for Obsidian that provides an interactive table view of your meeting notes, complete with dynamic filtering and a quick "New Note" button.
 
 ## Features
@@ -30,14 +28,21 @@ _Screenshot showing a filter by the Test2 tag_
 2.  In Dataview's settings, ensure **"Enable JavaScript Queries"** is turned on.
 3.  Create a new note in Obsidian.
 4.  Copy the entire script from the previous message and paste it into a `dataviewjs` code block in your note:
-    ```
+````
     ```dataviewjs
     // --- Main Configuration ---
     const CONFIG = {
         // ... (paste the full script here)
     };
-    // ...
+
+    ...
+
+    // --- Event Handling and Initial Render ---
+    selectElement.onchange = () => drawTable(selectElement.value);
+    drawTable(selectElement.value);
     ```
+````
+    
 5.  When you switch to Reading View, the script will render and display your meeting notes manager.
 
 ## Configuration
